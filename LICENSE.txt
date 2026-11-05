@@ -1,0 +1,29 @@
+ElectroWorkshop Basic / Villanyműhely – Terms of Use
+1.0 – 2026-11-05
+
+The copyright holder grants a non-exclusive, free permission to use this
+edition for private purposes and non-commercial education. Examples of
+non-commercial education include learning and demonstration in public or
+non-profit education that is not part of selling a commercial service.
+
+Commercial, professional business or revenue-generating use, including
+use as part of paid training, requires separate permission. These terms
+do not grant permission to sell or relicense the program, distribute a
+modified edition, or reuse its proprietary code. Rights not expressly
+granted are reserved, without limiting mandatory statutory rights.
+
+The development source is not licensed as open source. Technical access
+to browser-side JavaScript is not permission for unrestricted reuse.
+Users retain their own circuit documents and may save and reopen them.
+
+This program is an educational simulation. It must not be used to certify
+the safety of an actual installation or replace required inspections or
+qualified professional assessment. A simulation result does not establish
+actual absence of voltage, electrical protection or adequate sizing.
+
+The program is supplied as available without separately promised support
+or warranty, subject to mandatory law. Export important work to files.
+
+Third-party components remain subject to their own included licences;
+these terms do not restrict the rights granted by those licences.
+See THIRD-PARTY-NOTICES.txt and licenses/.

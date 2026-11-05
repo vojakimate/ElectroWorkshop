@@ -1,0 +1,20 @@
+ElectroWorkshop Basic / Villanyműhely
+
+The bundled interface uses icons from Bootstrap Icons and Phosphor Icons,
+and the Inter font where referenced by the included interface assets.
+Their original copyright notices and licences are included in licenses/:
+
+- BOOTSTRAP-ICONS-LICENSE.txt – MIT, The Bootstrap Authors
+- PHOSPHOR-LICENSE.txt – MIT, Phosphor Icons
+- INTER-LICENSE.txt – SIL Open Font License 1.1, The Inter Project Authors
+
+These components retain their original licence permissions independently
+of the proprietary application's private/non-commercial-education terms.
+
+The Windows launcher uses the system .NET Framework; no .NET runtime,
+Python runtime, Node.js runtime, Playwright or compiler is redistributed.
+Three.js and the 3D floorplan are not included. Separate third-party
+photographic circuit reference images from the full edition are omitted.
+The holding-circuit SVG included here is the project's teaching schematic.
+
+Developer build tools and test scripts are not part of the portable ZIP.

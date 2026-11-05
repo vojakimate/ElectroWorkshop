@@ -1,0 +1,34 @@
+Villanyműhely / ElectroWorkshop Basic – használati feltételek
+1.0 – 2026-11-05
+
+A kiadással a szerzői jogosult nem kizárólagos, díjmentes használati
+engedélyt ad magáncélú és nem üzleti oktatási használatra.
+Nem üzleti oktatás például a köznevelési vagy nonprofit oktatásban végzett,
+üzleti szolgáltatás értékesítését nem célzó tanulás és szemléltetés.
+
+Üzleti, üzemszerű szakmai vagy bevételszerzéshez kapcsolódó használathoz,
+illetve fizetős képzés részeként történő használathoz a jogosult külön
+engedélye szükséges. A program értékesítésére, újralicencelésére,
+módosított változatának terjesztésére vagy a saját kód újrafelhasználására
+ezek a feltételek nem adnak engedélyt. Minden kifejezetten nem engedélyezett
+jog a jogosultnál marad; a kötelező jogszabályi jogosultságokat ez nem érinti.
+
+A fejlesztési forrás nem kerül nyílt forráskódú licenc alá. A technikailag
+hozzáférhető JavaScript nem jelent szabad újrafelhasználási engedélyt.
+A felhasználó saját kapcsolási dokumentumai továbbra is a felhasználóéi;
+azok helyi mentését és megnyitását a program lehetővé teszi.
+
+A program oktatási szimuláció. Nem használható valós villamos berendezés
+biztonságának igazolására, szabványos felülvizsgálat vagy szakképzett
+személy által végzett ellenőrzés helyett. A szimuláció eredménye nem igazol
+valós feszültségmentességet, érintésvédelmet vagy megfelelő méretezést.
+
+A program az adott állapotában, külön vállalt támogatás vagy jótállás
+nélkül kerül rendelkezésre bocsátásra, a kötelező jogszabályi rendelkezések
+sérelme nélkül. A fontos munkákról a felhasználó készítsen fájlos mentést.
+
+A külső összetevőkre a mellékelt saját licenceik vonatkoznak. Ezek jogait
+a jelen feltételek nem korlátozzák. Lásd THIRD-PARTY-NOTICES.txt és licenses/.
+
+Ez a helyileg előkészített kiadás használati feltételének szövege.
+A nyilvános közzétételt a jogosult végzi; a csomag létrehozása nem feltöltés.
