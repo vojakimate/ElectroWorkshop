@@ -55,6 +55,101 @@ These are real captures of the packaged Windows application using example circui
 Connection tracing shows modelled conducting connections, not current flow or
 proof of absence of voltage. Click an image to view it at full size.
 
+## Future development: from electrical wiring to a smart home
+
+I’m an electrician student, and ElectroWorkshop is a side project I’m developing in my spare time alongside my studies.
+
+The next direction is to bring together **electrical wiring, smart devices, editable floorplans, 3D cable routing, and Home Assistant integration** in one learning environment.
+
+Development has already started, with promising early results and a working Home Assistant connection in my private laboratory setup.
+
+**These features are not yet available for public testing. They are not included in the downloadable ElectroWorkshop Basic edition.**
+
+The images below are real screenshots captured from the local development version using demonstration circuits and layouts. They show work in progress, currently with Hungarian interface labels.
+
+### Smart devices and their electrical connections
+
+![Development workshop showing conventional electrical components and a smart-device library](images/smart-home-workshop.png)
+
+The workshop combines conventional electrical components with models of smart devices. The screenshot shows a distribution board, a wired switch-and-lamp circuit, and a wider selection of components placed on the work surface.
+
+The library on the left includes smart-device models such as sensors, an RGBW controller, a thermostat, a touch switch, and a smart plug.
+
+The purpose is to practise the electrical side of a smart installation as well as its controls: understanding supply connections, switched outputs, loads, and the conditions under which a device can operate.
+
+Further work will connect these wiring exercises more closely with pairing, device states, and Home Assistant control.
+
+*This screenshot shows the component library and wiring workspace. It does not mean every component on the work surface is connected or paired.*
+
+### Understanding the installation in 3D
+
+![Development version showing a furnished sample apartment, device markers, and a control panel](images/smart-home-3d.png)
+
+The 3D view places the installation inside a furnished virtual building. Device markers show where equipment belongs, while the panel on the right displays controls, assignments, and status information for lighting, shutters, and other supported devices.
+
+The aim is to make the relationship between an electrical circuit and its physical location easier to understand. A lamp or shutter becomes part of a room rather than only a component on a wiring canvas.
+
+In this screenshot, the simulated supply is switched off and some devices are not assigned. The interface displays these conditions explicitly.
+
+### Planning cable routes in 3D
+
+![Development cable-routing example with two planned cable bundles and a routing information panel](images/smart-home-3d-wiring.png)
+
+This screenshot shows a simple demonstration room with a supply point and placed electrical devices. Two cable routes have been created, and the expanded panel on the left shows the cable-routing tools and estimated quantities.
+
+The development tools support automatic route previews and manual cable-bundle routing. Routes can be displayed together with the associated installation work, such as floor-opening or wall-chasing paths.
+
+The purpose is to explore **how devices are physically connected across a building**, alongside the terminal-to-terminal wiring shown in the workshop.
+
+There is also an experimental comparison between conventional wiring and a scenario where selected control connections can be replaced by wireless control. Wireless control does not remove the need to power mains-powered devices.
+
+*The displayed lengths and installation-work quantities are illustrative estimates for learning and comparison, not a certified installation design or quotation.*
+
+### Creating and editing your own floorplan
+
+![Floorplan editor showing three rooms, an internal doorway, a window, and drawing tools](images/smart-home-floorplan-editor.png)
+
+The development version includes a floorplan editor, allowing users to create their own layouts instead of relying only on the supplied demonstration buildings.
+
+This screenshot shows a simple three-room layout with an internal doorway and a window. The tools on the left provide room and wall drawing, doors and windows, movement, surface finishes, and furniture placement.
+
+The same layout can be opened in 3D. The intended workflow is to draw and edit a building, arrange its interior, place electrical devices, and explore their wiring and cable routes.
+
+The editor is intended for educational layouts and visual experiments rather than construction documentation.
+
+### A real Home Assistant system in the laboratory
+
+[Home Assistant](https://www.home-assistant.io/) is an open-source home automation platform. It brings devices and sensors together in one place and provides dashboards, controls, and automations.
+
+**ElectroWorkshop’s laboratory integration uses a real Home Assistant installation, not a simulated Home Assistant screen.** The electrical devices inside ElectroWorkshop remain virtual, while Home Assistant is the actual smart-home controller communicating with them.
+
+The private development setup is hosted on my NAS using Docker services:
+
+- **ElectroWorkshop** provides the workshop, simulated devices, and building interface.
+- A dedicated **bridge service** translates supported device states and commands between the workshop and MQTT.
+- **Mosquitto**, the MQTT message broker, carries messages between the services.
+- **Home Assistant**, also installed on the NAS, discovers supported paired devices, receives their states, and provides controls and automation logic.
+
+The communication works in both directions:
+
+**ElectroWorkshop ↔ bridge service ↔ MQTT broker ↔ Home Assistant**
+
+For example, a supported virtual sensor can report its simulated readings to Home Assistant. Home Assistant can then use those readings in an automation and send commands back to a supported virtual actuator in the workshop.
+
+Pairing is part of the laboratory workflow. Supported workshop devices can appear as devices and entities in Home Assistant, and a dedicated virtual workshop hub allows pairing to be initiated from Home Assistant.
+
+This makes it possible to practise with an actual smart-home platform while using simulated electrical equipment. It does not require the virtual devices to contain physical Zigbee or Z-Wave radios: this laboratory connection uses [MQTT](https://www.home-assistant.io/integrations/mqtt/).
+
+*The screenshots above were captured locally to demonstrate the interface. They do not show an active connection to the NAS or a live Home Assistant dashboard.*
+
+### What is available now?
+
+The public Windows download contains **ElectroWorkshop Basic**, the conventional electrical workshop.
+
+The smart-device integration, Home Assistant laboratory connection, editable floorplans, 3D building view, and cable-routing tools belong to a separate development version. Work on these features is ongoing, and there is no announced public testing or release date.
+
+The long-term goal is a connected learning workflow: **draw a building, wire its devices, explore cable routes in 3D, and experiment with smart-home control through a real Home Assistant system.**
+
 ## Documentation
 
 - [Getting started](docs/GETTING-STARTED.md)
