@@ -1,6 +1,6 @@
 # ElectroWorkshop Basic
 
-A portable Windows electrical workshop for learning conventional wiring,
+A portable Windows AC electrical workshop for learning conventional wiring,
 lighting circuits and motor control. English and Hungarian interfaces.
 
 ![ElectroWorkshop Basic interface](images/screenshot.png)
