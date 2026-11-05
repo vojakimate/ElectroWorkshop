@@ -3,7 +3,7 @@
 A portable Windows electrical workshop for learning conventional wiring,
 lighting circuits and motor control. English and Hungarian interfaces.
 
-![ElectroWorkshop Basic interface](images/workshop.png)
+![ElectroWorkshop Basic interface](images/Képernyőkép 2026-11-05 205923.png)
 
 **Free for private use and non-commercial education. This is a proprietary
 application, not an open-source project.** Commercial use requires separate
