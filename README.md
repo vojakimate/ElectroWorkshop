@@ -114,3 +114,14 @@ those component licences.
 Report reproducible problems in this repository's Issues. Include the program
 version, Windows/browser version and reproduction steps. Do not attach
 passwords, tokens or personal circuit files containing private information.
+
+## Support ElectroWorkshop ☕⚡
+
+If ElectroWorkshop helps you learn or practise electrical wiring, you can support its development:
+
+- ⚡ **[Become a supporter on Patreon](https://www.patreon.com/vojakimate)** — help fund improvements and future smart-home features, including Home Assistant integration.
+- ☕ **[Buy me a coffee via Revolut](https://revolut.me/mtuql2w)** — send a one-time contribution.
+
+Support is entirely optional. **ElectroWorkshop Basic remains free for private use and non-commercial education.** Contributions do not change the software licence or guarantee specific features or release dates.
+
+Thank you for supporting the project!
